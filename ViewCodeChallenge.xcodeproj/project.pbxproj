@@ -15,6 +15,7 @@
 		3D6009442758381500E4F3B9 /* ViewCodeChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D6009432758381500E4F3B9 /* ViewCodeChallengeTests.swift */; };
 		3D60094E2758381500E4F3B9 /* ViewCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60094D2758381500E4F3B9 /* ViewCodeChallengeUITests.swift */; };
 		3D6009502758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60094F2758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift */; };
+		3DF6EE1A275C6C7E00E579D5 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6EE19275C6C7E00E579D5 /* DialogsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		3D6009492758381500E4F3B9 /* ViewCodeChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewCodeChallengeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D60094D2758381500E4F3B9 /* ViewCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		3D60094F2758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		3DF6EE19275C6C7E00E579D5 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +102,7 @@
 				3D60092C2758381400E4F3B9 /* AppDelegate.swift */,
 				3D60092E2758381400E4F3B9 /* SceneDelegate.swift */,
 				3D6009302758381400E4F3B9 /* ViewController.swift */,
+				3DF6EE19275C6C7E00E579D5 /* DialogsViewController.swift */,
 				3D6009352758381400E4F3B9 /* Assets.xcassets */,
 				3D6009372758381400E4F3B9 /* LaunchScreen.storyboard */,
 				3D60093A2758381400E4F3B9 /* Info.plist */,
@@ -254,6 +257,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF6EE1A275C6C7E00E579D5 /* DialogsViewController.swift in Sources */,
 				3D6009312758381400E4F3B9 /* ViewController.swift in Sources */,
 				3D60092D2758381400E4F3B9 /* AppDelegate.swift in Sources */,
 				3D60092F2758381400E4F3B9 /* SceneDelegate.swift in Sources */,
