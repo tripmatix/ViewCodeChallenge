@@ -58,7 +58,6 @@ class ViewController: UIViewController {
         labelParam.layer.cornerRadius = 10
         labelParam.layer.masksToBounds = true
         labelParam.translatesAutoresizingMaskIntoConstraints = false
-        
     }
     
     func imageConfig(imgParam: UIImageView, image: UIImage){

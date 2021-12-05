@@ -12,8 +12,11 @@ class DialogsViewController: UIViewController, UICollectionViewDelegate, UIColle
     
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
-        layout.scrollDirection = .vertical
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
+        layout.scrollDirection = .horizontal
+        layout.itemSize = CGSize(width: 40,
+                                 height: 40)
+        
         return view
     }()
     
@@ -21,25 +24,26 @@ class DialogsViewController: UIViewController, UICollectionViewDelegate, UIColle
         super.viewDidLoad()
         self.view.backgroundColor = .white
         self.title = "FORMAS DE PAGAMENTO"
-        collectionView.register(UICollectionViewCell.self,
-                                forCellWithReuseIdentifier: "cell")
+        collectionView.register(CustomCollectionViewCell.self,
+                                forCellWithReuseIdentifier: CustomCollectionViewCell.identifier)
         collectionView.dataSource = self
         collectionView.delegate = self
         self.view.addSubview(collectionView)
         collectionView.frame = view.bounds
+
         
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 30
+        return 10
     }
     
-    func collectionView
-    
+    func numberOfSections(in collectionView: UICollectionView) -> Int {
+        1
+    }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell",
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionViewCell.identifier,
                                                       for: indexPath)
-        cell.contentView.backgroundColor = .orange
         return cell
     }
 }
