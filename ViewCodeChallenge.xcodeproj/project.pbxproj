@@ -16,6 +16,7 @@
 		3D60094E2758381500E4F3B9 /* ViewCodeChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60094D2758381500E4F3B9 /* ViewCodeChallengeUITests.swift */; };
 		3D6009502758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D60094F2758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift */; };
 		3DF6EE1A275C6C7E00E579D5 /* DialogsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6EE19275C6C7E00E579D5 /* DialogsViewController.swift */; };
+		3DF6EE1D275C90C800E579D5 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF6EE1C275C90C800E579D5 /* DataModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		3D60094D2758381500E4F3B9 /* ViewCodeChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallengeUITests.swift; sourceTree = "<group>"; };
 		3D60094F2758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewCodeChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		3DF6EE19275C6C7E00E579D5 /* DialogsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DialogsViewController.swift; sourceTree = "<group>"; };
+		3DF6EE1C275C90C800E579D5 /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		3D60092B2758381400E4F3B9 /* ViewCodeChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				3DF6EE1B275C90A400E579D5 /* Model */,
 				3D60092C2758381400E4F3B9 /* AppDelegate.swift */,
 				3D60092E2758381400E4F3B9 /* SceneDelegate.swift */,
 				3D6009302758381400E4F3B9 /* ViewController.swift */,
@@ -125,6 +128,14 @@
 				3D60094F2758381500E4F3B9 /* ViewCodeChallengeUITestsLaunchTests.swift */,
 			);
 			path = ViewCodeChallengeUITests;
+			sourceTree = "<group>";
+		};
+		3DF6EE1B275C90A400E579D5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3DF6EE1C275C90C800E579D5 /* DataModel.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,6 +268,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DF6EE1D275C90C800E579D5 /* DataModel.swift in Sources */,
 				3DF6EE1A275C6C7E00E579D5 /* DialogsViewController.swift in Sources */,
 				3D6009312758381400E4F3B9 /* ViewController.swift in Sources */,
 				3D60092D2758381400E4F3B9 /* AppDelegate.swift in Sources */,
