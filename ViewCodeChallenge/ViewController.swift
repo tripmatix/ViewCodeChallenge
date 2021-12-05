@@ -112,7 +112,8 @@ class ViewController: UIViewController {
     
     @objc func buttonAction(sender: UIButton) {
         let dialogsViewController = DialogsViewController()
-        dialogsViewController.title = "FORMAS DE PAGAMENTO"
+        self.navigationItem.backButtonTitle = ""
+        self.navigationController?.navigationBar.tintColor = .orange
         self.navigationController?.pushViewController(dialogsViewController, animated: true)
     }
 }
