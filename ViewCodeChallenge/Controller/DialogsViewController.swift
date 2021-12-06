@@ -13,9 +13,9 @@ class DialogsViewController: UIViewController, UICollectionViewDelegate, UIColle
     private var collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         let view = UICollectionView(frame: .zero, collectionViewLayout: layout)
-        layout.scrollDirection = .horizontal
-        layout.itemSize = CGSize(width: 40,
-                                 height: 40)
+        layout.scrollDirection = .vertical
+        layout.itemSize = CGSize(width: 400,
+                                 height: 200)
         
         return view
     }()

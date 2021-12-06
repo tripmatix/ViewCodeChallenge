@@ -29,7 +29,9 @@ class CustomCollectionViewCell: UICollectionViewCell {
         super.init(frame: frame)
         contentView.backgroundColor = .orange
         contentView.addSubview(cardFlagImage)
-        contentView.addSubview(cardDescriptionLabel)
+//        contentView.addSubview(cardDescriptionLabel)
+        setConstraints()
+
     }
     
     required init?(coder: NSCoder) {
@@ -38,15 +40,25 @@ class CustomCollectionViewCell: UICollectionViewCell {
     
     override func layoutSubviews() {
         super.layoutSubviews()
-        
-        cardDescriptionLabel.frame = CGRect(x: 5,
-                                            y: contentView.frame.size.height,
-                                            width: contentView.frame.size.width,
-                                            height: 50)
-        
-        cardFlagImage.frame = CGRect(x: 5,
-                                     y: 0,
-                                     width: contentView.frame.size.width,
-                                     height: contentView.frame.size.height)
+
+        cardFlagImage.frame = CGRect(x: 0,
+                                     y: 50,
+                                     width: 30,
+                                     height: 30)
+
+        cardDescriptionLabel.frame = CGRect(x: 0,
+                                            y: -100,
+                                            width: 10,
+                                            height: 30)
+
+
+    }
+    
+    func setConstraints() {
+//        cardFlagImage.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 10).isActive = true
+        cardFlagImage.centerXAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.centerXAnchor, constant: 0).isActive = true
+        cardFlagImage.centerYAnchor.constraint(equalTo: contentView.safeAreaLayoutGuide.centerYAnchor, constant: 0).isActive = true
+//        cardFlagImage.trailingAnchor.constraint(equalTo: cardDescriptionLabel.leadingAnchor, constant: 10).isActive = true
+//        cardDescriptionLabel.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: 0).isActive = true
     }
 }
